@@ -11,6 +11,8 @@ a {
   text-decoration: none;
 }
 
+
+
 nav {
   text-align: right;
   padding: 1%;
@@ -154,13 +156,17 @@ section ul.cards h2.titles {
 }
 
 section.formContact {
-  background-color: black;
+  background-color: white;
   padding: 30px;
-  margin: 15px;
+  margin: 5px;
   border-radius: 10px;
   text-align: center;
   width: 350px;
   margin: 0 auto;
+}
+
+form.items-formContact {
+  color: black;
 }
 
 /* Fin Conctacto */
@@ -200,10 +206,7 @@ section.formContact {
   width: 150px;
 }
 
-.grid-item:nth-child(2) {
-  height: 700px;
-  grid-column: 1/12;
-}
+
 
 .grid-item:nth-child(2) img {
   border-radius: 10px;
@@ -616,3 +619,238 @@ section.formContact {
 }
 
 /* Fin Menu */
+
+/* Media Queries 
+
+Entre parentesis va la medida de quiebre en la cual hacer efecto la madiea quiere
+
+min: desde / a partir de
+max: hasta
+
+*/
+
+  /* Mobile */
+
+  @media screen and (max-width: 767px) {
+    .grid-item-header:nth-child(2) .logo img.isologotipo {
+      display: none;
+    }
+    .grid-item:nth-child(1) .logo img.imgLogo {
+      width: 80px;
+      height: 70px;
+      margin-top: 10px;
+    }
+    .grid-item:nth-child(2) {
+      height: 200px;
+      width: 90%;
+    }
+
+    .grid-item-info-reserves {
+        height: 600px;
+        grid-column: 1/8;
+    }
+
+    .grid-item:nth-child(3) {
+       height: 300px;
+    }
+    .grid-item-header:nth-child(1) {
+      display: none;
+    }
+    .grid-item-header:nth-child(2) {
+        grid-column: 1/3;
+        text-align: left;
+    }
+    .grid-item-header:nth-child(3) {
+      display: none;
+    }
+    .grid-item-header:nth-child(4) {
+      display: flex;
+      grid-column: 3/10;
+    }
+    .grid-item-header:nth-child(4) ul.menu {
+      list-style: none;
+      display: flex;
+    }
+    .grid-item-header:nth-child(4) ul.menu li {
+      margin: 0 2px;
+      font-family: cursive;
+      font-size: 15px;
+    }
+    .grid-item-footer:nth-child(2) p {
+      font-size: 8px;
+    }
+    .grid-item-footer:nth-child(3) h2 {
+      font-size: 14px;
+    }
+    .grid-item-footer:nth-child(3) ul.footer-redes img {
+      height: 35px !important;
+      width: 100%;
+    }
+    .grid-item-footer:nth-child(3) ul.footer-redes li {
+      margin: -10px 05px;
+    }
+    .grid-item-footer .logo img {
+      height: 50px !important;
+      background: blue;
+    }
+    .grid-item-footer:nth-child(2) img{
+      height: 20px !important;
+    }
+    .grid-item-footer-container {
+        background: rgb(145, 37, 37);;
+        grid-column: 1/12;
+        height: 300px;
+    }
+    .grid-item-about-us-details:nth-child(2) {
+        background: saddlebrown;
+        grid-column: 1/7;
+        height: 180px;
+    }
+    .grid-item-about-us-details:nth-child(3) {
+        grid-column: 7/12;
+        height: 100%;
+      }
+    .grid-item-about-us-details:nth-child(4) {
+        grid-column: 1/12;
+        grid-row: 3;
+        height: 450px;
+      }
+    .grid-item-about-us-details:nth-child(5) {
+        grid-column: 1/12;
+        grid-row: 4;
+        height: 400px;
+    }
+    .grid-item-about-us-details:nth-child(5) img{
+        width: 100%;
+        height: 60%;
+    }
+    .grid-item-footer-abuot-us-container {
+        background: rgb(145, 37, 37);
+        margin-top: 900px;
+        grid-column: 1/12;
+        height: 300px;
+      }
+  
+  }
+
+
+
+/* Para Tablets, luego ya es desktop */
+
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .grid-item-header:nth-child(2) .logo img.isologotipo {
+        display: none;
+      }
+    .grid-item:nth-child(1) .logo img.imgLogo {
+      width: 130px;
+      height: 85px;
+    }
+    .grid-item-header:nth-child(1) ul.menu li {
+        margin: 0 10px;
+        font-family: cursive;
+        font-size: 20px;
+      }
+    .grid-item-header:nth-child(3) ul.menu li {
+        margin: 0 10px;
+        font-family: cursive;
+        font-size: 20px;
+    } 
+    .grid-item:nth-child(2) {
+        height: 400px;
+        width: 95%;
+    }
+    .grid-item:nth-child(3) {
+        height: 400px;
+    }
+    .grid-item-about-us-details:nth-child(2) {
+        grid-column: 1/7;
+        height: 180px;
+    }
+    .grid-item-about-us-details:nth-child(3) {
+        grid-column: 1/7;
+        height: 180px;
+      }
+      .grid-item-about-us-details:nth-child(4) {
+        grid-column: 8/12;
+        height: 180px;
+      }
+      .grid-item-about-us-details:nth-child(5) {
+        grid-column: 1/12;
+        grid-row: 4;
+        height: 550px;
+      }
+      .grid-item-footer-abuot-us-container {
+        background: rgb(145, 37, 37);
+        margin-top: 700px;
+        grid-column: 1/12;
+        height: 300px;
+      }
+  
+  }
+
+
+/* Desafio 4: Agrager Transformaciones, animaciones y/o transiciones en un rama y
+mergear a master */
+
+
+/* Gradientes */
+
+.grid-item:nth-child(2) {
+  height: 700px;
+  grid-column: 1/12;
+  /* Aplico un gradiente sobre la imagen de fondo */
+  background-image:url("../images/presentacion.jpg"),
+  linear-gradient(to bottom,
+    rgb(255, 255, 255),
+    rgba(179, 82, 18, 0.096)
+  );
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+
+/* Fin Gradientes */
+
+
+/* Transformacion */
+
+.grid-item-carta-details img:hover {
+  transform: scale(2,2);
+  transition: all 1s;
+}
+
+.grid-item-about-us-details img:hover{
+  transform: scale(2,2);
+  transition: all 1s;
+}
+
+/* Fin transfomaciones */
+
+/* Animaciones */
+
+h1.title_reserves{
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+h1.title_contact{
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+  color: black;
+}
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fin Animaciones */
