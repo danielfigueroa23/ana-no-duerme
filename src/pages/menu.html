@@ -7,134 +7,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana No Duerme - Resto Bar</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="grid-item">
-            <div class="grid-container-header">
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="../pages/reserves.html"> Reservas</a></li>
-                    </ul>
-                </div>
-                <div class="grid-item-header">
-                    <div class="logo">
-                        <img src="../images/isologotipo.jpg" class="isologotipo">
-                        <img src="../images/logo.png" class="imgLogo">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="">
+                            <img src="../images/isologotipo.jpg" alt="" width="100" height="100" class="d-inline-block align-text-medium">
+                            Ana No Duerme
+                          </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="../pages/reserves.html">Reservas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="../pages/menu.html">Carta</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="../pages/about_us.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="../pages/contact.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </div>
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="../pages/menu.html">Carta</a></li>
-                        <li><a href="../pages/about_us.html">Nosotros</a></li>
-                        <li><a href="../pages/contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <!-- Menu para la vista mobile (Se habilita por media querie) -->
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="../pages/reserves.html"> Reservas</a></li>
-                        <li><a href="../pages/menu.html">Carta</a></li>
-                        <li><a href="../pages/about_us.html">Nosotros</a></li>
-                        <li><a href="../pages/contact.html">Contacto</a></li>
-                    </ul>
-                </div>
+                  </nav>
             </div>
-        </div>
-        <div class="grid-item-carta-container">
-            <div class="grid-container-carta">
-                <div class="grid-item-carta">
-                    <div class="grid-item-carta-titles">
-                        <h1>COKTAILS</h1>
-                    </div>
-                </div>
-                <div class="grid-item-carta">
-                    <div class="grid-item-carta-details">
-                        <img src="../images/tomCollins.png">
-                        <h3> Tom Collins</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum ut magnam dignissimos
-                            reprehenderit! Quas</p>
-                    </div>
-                </div>
-                <div class="grid-item-carta">
-                    <div class="grid-item-carta-details">
-                        <img src="../images/ginFizz.png">
-                        <h3> Gin Fizz</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum ut magnam dignissimos
-                            reprehenderit! Quas</p>
-                    </div>
-                </div>
-                <div class="grid-item-carta">
-                    <div class="grid-item-carta-details">
-                        <img src="../images/appelJagerinha.png">
-                        <h3> Appel Jagerinha</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum ut magnam dignissimos
-                            reprehenderit! Quas</p>
-                    </div>
-                </div>
-                <div class="grid-item-carta">
-                    <div class="grid-item-carta-titles">
-                        <h1>PLATOS</h1>
-                    </div>
-                </div>
-                <div class="grid-item-carta">
-                    <div class="grid-item-carta-details">
-                        <img src="../images/plato1.png">
-                        <h3> Hamburguesa </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum ut magnam dignissimos
-                            reprehenderit! Quas</p>
-                    </div>
-                </div>
-                <div class="grid-item-carta">
-                    <div class="grid-item-carta-details">
-                        <img src="../images/plato2.png">
-                        <h3> Calzone </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum ut magnam dignissimos
-                            reprehenderit! Quas</p>
-                    </div>
-                </div>
-                <div class="grid-item-carta">
-                    <div class="grid-item-carta-details">
-                        <img src="../images/plato5.png">
-                        <h3> Sandwich Completo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum ut magnam dignissimos
-                            reprehenderit! Quas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="grid-item-footer-container">
-            <div class="grid-container-footer">
-                <div class="grid-item-footer">
-                    <div class="logo">
-                        <img src="../images/isologotipo.jpg">
-                        <img src="../images/logo.png">
-                    </div>
-                </div>
-                <div class="grid-item-footer">
-                    <p> Posadas 599 - Concepcion del uruguay, Entre Rios, Argetina</p>
-                    <p><a href="https://wa.link/0ffi5f"><img src="../images/whatsapp.png"> +54 9 3442 684398</p></a>
-                </div>
-                <div class="grid-item-footer">
-                    <h2>Seguinos en nuestras redes</h2>
-                    <ul class="footer-redes">
-                        <li><a href="https://www.instagram.com/_ana.no.duerme_/"><img src="../images/instagram.png"></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/Ana-no-Duerme-Resto-Bar-111057223766735"><img
-                                    src="../images/facebook.png"></a></li>
-                    </ul>
-                </div>
-                <div class="grid-item-footer">
-                    <hr>
-                    <h3>Ana no duerme © - 2022</h3>
-                </div>
+            <div class="col-12">
+              <h2 style="color: white;">Coktails</h2>
 
+              <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <img src="../images/tomCollins.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body bg-light">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="../images/ginFizz.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body bg-light">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="../images/appelJagerinha.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body bg-light">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="../images/appelJagerinha.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body bg-light">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-12">
+            <h2 style="color: white;">Platos</h2>
+            <div class="row">
+              <div class="col-3">
+                  <div class="card">
+                      <img src="../images/plato1.png" class="card-img-top" alt="...">
+                 </div>
+                <div class="card-body bg-light">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="col-3">
+                  <div class="card">
+                      <img src="../images/plato2.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body bg-light">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="col-3">
+                  <div class="card">
+                      <img src="../images/plato5.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body bg-light">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="col-3">
+                  <div class="card">
+                      <img src="../images/plato5.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body bg-light">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
+          <div class="col">
+            <!-- Footer -->
+            <footer class="text-center text-lg-start bg-black text-muted">
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <div class="row mt-3">
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <p>
+                                    <img src="../images/logo.png">
+                                </p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Contactanos
+                                </h6>
+                                <p>
+                                    <ul style="display:flex; justify-content: space-around; list-style: none;">
+                                        <li style="margin: 10px;"><a href="../pages/contact.html"><img src="../images/instagram.png" width="100%"></a></lis>
+                                        <li style="margin: 10px;"><img src="../images/facebook.png" width="100%"></li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Contacto
+                                </h6>
+                                <p> Posadas 599 - Concepcion del uruguay, Entre Rios, Argetina</p>
+                                <p><img src="../images/whatsapp.png" height="30px"> +54 9 3442 684398</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2022 Copyright:
+                    <a class="text-reset fw-bold">Ana No Duerme</a>
+                </div>
+            </footer>
+            <!-- Footer -->
+          </div>
     </div>
 </body>
-
 </html>

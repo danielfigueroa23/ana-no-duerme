@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(145, 37, 37);
+  background-color: rgb(145, 37, 37) !important;
 }
 
 h1, h2, h3 {

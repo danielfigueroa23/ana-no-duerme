@@ -6,115 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana No Duerme - Resto Bar</title>
     <link rel="stylesheet" href="./src/styles/style.css">
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="grid-item">
-            <div class="grid-container-header">
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./src/pages/reserves.html"> Reservas</a></li>
-                    </ul>
-                </div>
-                <div class="grid-item-header">
-                    <div class="logo">
-                        <img src="./src/images/isologotipo.jpg" class="isologotipo">
-                        <img src="./src/images/logo.png" class="imgLogo">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./src/images/isologotipo.jpg" alt="" width="100" height="100" class="d-inline-block align-text-medium">
+                            Ana No Duerme
+                          </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./src/pages/reserves.html">Reservas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./src/pages/menu.html">Carta</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./src/pages/about_us.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./src/pages/contact.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </div>
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="./src/pages/menu.html">Carta</a></li>
-                        <li><a href="./src/pages/about_us.html">Nosotros</a></li>
-                        <li><a href="./src/pages/contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <!-- Menu para la vista mobile (Se habilita por media querie) -->
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./src/pages/reserves.html"> Reservas</a></li>
-                        <li><a href="./src/pages/menu.html">Carta</a></li>
-                        <li><a href="./src/pages/about_us.html">Nosotros</a></li>
-                        <li><a href="./src/pages/contact.html">Contacto</a></li>
-                    </ul>
-                </div>
+                  </nav>
             </div>
-        </div>
-        <div class="grid-item">
-            <!-- <img src="./src/images/presentacion.jpg" width="100%" height="100%"> -->
-        </div>
-        <div class="grid-item">
-            <h2 class="cardsTitle-2">
-                Veni a disfrutar de mas de 250 coktails
-            </h2>
-            <div class="grid-container-detalle-1">
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/tomCollins.png">
+            <div class="col-12">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/ginFizz.png">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./src/images/presentacion.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./src/images/Presentacion-2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./src/images/Presentacion-3.png" class="d-block w-100" alt="...">
+                  </div>
                 </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/appelJagerinha.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/appelJagerinha.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/coktail5.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/appelJagerinha.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/appelJagerinha.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/cynarJulep.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/appelJagerinha.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/appelJagerinha.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/cynarJulep.png">
-                </div>
-                <div class="grid-item-detalle-1">
-                    <img src="./src/images/appelJagerinha.png">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
-        </div>
-        <div class="grid-item-footer-container">
-            <div class="grid-container-footer">
-                <div class="grid-item-footer">
-                    <div class="logo">
-                        <img src="./src/images/isologotipo.jpg">
-                        <img src="./src/images/logo.png">
-                    </div>
-                </div>
-                <div class="grid-item-footer">
-                    <p> Posadas 599 - Concepcion del uruguay, Entre Rios, Argetina</p>
-                    <p><img src="./src/images/whatsapp.png" height="30px"> +54 9 3442 684398</p>
-                </div>
-                <div class="grid-item-footer">
-                    <h2>Seguinos en nuestras redes</h2>
-                    <ul class="footer-redes">
-                        <li><a href="./src/pages/contact.html"><img src="./src/images/instagram.png"></a></li>
-                        <li><img src="./src/images/facebook.png"></li>
-                    </ul>
-                </div>
-                <div class="grid-item-footer">
-                    <hr>
-                    <h3>Ana no duerme © - 2022</h3>
-                </div>
+            <div class="col-12">
+              <h2 style="color: white;">Veni a disfrutar de mas de 250 coktails</h2>
 
+              <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <img src="./src/images/tomCollins.png" class="card-img-top" alt="...">
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="./src/images/ginFizz.png" class="card-img-top" alt="...">
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="./src/images/appelJagerinha.png" class="card-img-top" alt="...">
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="./src/images/appelJagerinha.png" class="card-img-top" alt="...">
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="./src/images/appelJagerinha.png" class="card-img-top" alt="...">
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="./src/images/appelJagerinha.png" class="card-img-top" alt="...">
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="./src/images/appelJagerinha.png" class="card-img-top" alt="...">
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="./src/images/appelJagerinha.png" class="card-img-top" alt="...">
+                      </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+          <div class="col">
+            <!-- Footer -->
+            <footer class="text-center text-lg-start bg-black text-muted">
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <div class="row mt-3">
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <p>
+                                    <img src="./src/images/logo.png">
+                                </p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Contactanos
+                                </h6>
+                                <p>
+                                    <ul style="display:flex; justify-content: space-around; list-style: none;">
+                                        <li style="margin: 10px;"><a href="./src/pages/contact.html"><img src="./src/images/instagram.png" width="100%"></a></lis>
+                                        <li style="margin: 10px;"><img src="./src/images/facebook.png" width="100%"></li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Contacto
+                                </h6>
+                                <p> Posadas 599 - Concepcion del uruguay, Entre Rios, Argetina</p>
+                                <p><img src="./src/images/whatsapp.png" height="30px"> +54 9 3442 684398</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2022 Copyright:
+                    <a class="text-reset fw-bold">Ana No Duerme</a>
+                </div>
+            </footer>
+            <!-- Footer -->
+          </div>
     </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
