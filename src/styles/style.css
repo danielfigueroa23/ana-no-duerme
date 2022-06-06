@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(145, 37, 37) !important;
+  background-color: black !important;
 }
 
 h1, h2, h3 {
@@ -632,6 +632,94 @@ max: hasta
   /* Mobile */
 
   @media screen and (max-width: 767px) {
+
+    img.logo-footer {
+      height: 150px;
+    }
+
+    ul.redes-footer img{
+      width:100%;
+      height: 60px;
+    }
+    
+    ul.redes-footer{
+      justify-content: center !important; 
+      list-style: none;
+    }
+
+    img.img-deck-home {
+      height: 100px;
+      width: 180px;
+    }
+
+    h1.text-sections{
+      font-size: 1rem;
+      margin-top: 70px !important;
+    }
+
+    a.navbar-brand img {
+      height: 80;
+      margin-bottom: 10px;
+    }
+
+    div.card {
+      width: 100% !important;
+      height: 250px;
+    }
+
+    div.modal-body div.card {
+      height: 600px !important;
+    }
+
+    div.circulo-1 {
+      width: 220px !important;
+      height: 200px !important;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      margin-top: -150px !important;
+      margin-left: -100px !important;
+    }
+    
+    div.circulo-2 {
+      width: 130px !important;
+      height: 130px !important;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: rgb(145, 37, 37);
+      margin-top: -100px !important;
+      margin-left: 100px !important;
+    }
+
+    img#img-merienda {
+      border-radius: 40px;
+      height: 200px !important;
+      width: 250px;
+    }
+
+    img.img-about-us {
+      height:100px !important;
+      width: 100px !important;
+    }
+
+    img.img-staff-parnerts {
+      width: 50px;
+      height: 50px;
+    }
+
+    h2.title-barmans {
+      font-size: 20px;
+    }
+    
+    h3.titles-barman {
+      font-size: 20px;
+    }
+
+    p.text-about-us {
+      font-size: 10px !important;
+    }
+
     .grid-item-header:nth-child(2) .logo img.isologotipo {
       display: none;
     }
@@ -740,6 +828,80 @@ max: hasta
 
   @media (min-width: 768px) and (max-width: 1023px) {
 
+    img.logo-footer {
+      height: 100px;
+    }
+
+    ul.redes-footer img{
+      width: 40px !important;
+      height: 40px;
+    }
+    
+    ul.redes-footer{
+      justify-content: center !important; 
+      list-style: none;
+    }
+
+    img.img-deck-home {
+      height: 230px;
+      width: 350px;
+    }
+
+    h1.text-sections{
+      font-size: 2rem;
+      margin-top: 100px !important;
+    }
+
+    div.card {
+      width:14rem !important  ;
+    }
+
+    div.modal-body div.card {
+      width: 100% !important;
+      height: 700px !important;
+    }
+
+    div.circulo-1 {
+      width: 350px !important;
+      height: 350px !important;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      margin-top: -230px;
+      margin-left: -200px;
+    }
+    
+    div.circulo-2 {
+      width: 200px !important;
+      height: 200px !important;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: rgb(145, 37, 37);
+      margin-top: -130px !important;
+      margin-left: 130px !important;
+    }
+
+    img#img-merienda {
+      border-radius: 40px;
+      height: 300px !important;
+      width: 350px;
+    }
+
+    img.img-staff-parnerts {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.img-about-us {
+      height:200px !important;
+      width: 150px !important;
+    }
+
+    p.text-about-us {
+      font-size: 20px !important;
+    }
+    
     .grid-item-header:nth-child(2) .logo img.isologotipo {
         display: none;
       }
@@ -834,6 +996,8 @@ h1.title_reserves{
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
+  color: white;
+  text-align: center;
 }
 
 h1.title_contact{
@@ -854,3 +1018,197 @@ h1.title_contact{
 }
 
 /* Fin Animaciones */
+
+
+/* Segunda Pre-Entrega: Hacer totalmente responsive y con animaciones y/o transformacioenes 
+dos paginas del sitio */
+
+a.navbar-brand:hover {
+  color: red;
+}
+
+a.navbar-brand {
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: xx-large; 
+}
+
+
+li.nav-item a {
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: xx-large;
+}
+
+li.nav-item a:hover {
+  color: red;
+}
+
+li.nav-item a.nav-link.active {
+  color: red; 
+}
+
+img.logo-footer {
+  margin-top: 1rem;
+}
+
+ul.redes-footer{
+  display:flex; 
+  justify-content: space-around; 
+  list-style: none;
+}
+
+ul.redes-footer li {
+  margin: 10px;
+}
+
+ul.redes-footer img{
+  width:100%;
+}
+
+img.img-deck-home {
+  border-radius: 40px;
+}
+
+
+img.img-deck-home:hover {
+transform: scale(2,2);
+transition: all 1s;
+}
+
+h1.text-sections{
+  font-family:'Indie Flower', cursive; 
+  margin-top: 100px;
+  color: white;
+}
+
+button.navbar-toggler{
+  background-color: white;
+}
+
+div.card {
+  background-color: rgb(145, 37, 37);
+  color: white;
+}
+
+img#img-merienda {
+  border-radius: 40px;
+  height: 400px;
+}
+
+img#img-merienda:hover {
+  transform: scale(2,2);
+  transition: all 1s; 
+}
+
+div.circulo-1 {
+  width: 400px;
+  height: 400px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: rgb(145, 37, 37);
+  margin-top: -230px;
+  margin-left: -200px;
+}
+
+div.circulo-2 {
+  width: 400px;
+  height: 400px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: rgb(145, 37, 37);
+  margin-top: -180px;
+  margin-left: 280px;
+}
+
+img.img-mas-pedidos {
+  -webkit-filter: grayscale(100%);
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+img.img-mas-pedidos:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transform: scale(2,2);
+  transition: all 1s;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:70%;
+  width:100%;
+  position:absolute;
+}
+
+h1.text-reserves{
+  font-family:'Indie Flower', cursive; 
+  color: white;
+}
+
+label.form-label {
+  color: white;
+}
+
+p.contact-data {
+  color: white;
+}
+
+label.form-check-label {
+  color: white;
+}
+
+p.text-about-us {
+  font-family:'Indie Flower', cursive; 
+  font-size: 25px;
+  color: white;
+}
+
+h1.title-staff {
+  text-align: center;
+  color: white;
+}
+
+h1.title-history {
+  font-family:'Indie Flower', cursive;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2.title-barmans {
+  font-family:'Indie Flower', cursive;
+  color: white;
+  text-align: center;
+}
+
+h3.titles-barman {
+  font-family:'Indie Flower', cursive;
+  color: white;
+  text-align: center;
+}
+
+img.img-staff-parnerts {
+  border-radius: 100px;
+}
+
+img.img-staff-parnerts:hover {
+  transform: scale(2,2);
+  transition: all 1s; 
+}
+
+img.img-about-us {
+  width:100%;
+  height:40%;
+  padding: 10px;
+}

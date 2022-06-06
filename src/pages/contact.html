@@ -1,103 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana No Duerme - Resto Bar</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="grid-item">
-            <div class="grid-container-header">
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="../pages/reserves.html"> Reservas</a></li>
-                    </ul>
-                </div>
-                <div class="grid-item-header">
-                    <div class="logo">
-                        <img src="../images/isologotipo.jpg" class="isologotipo">
-                        <img src="../images/logo.png" class="imgLogo">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="../images/isologotipo.jpg" alt="" width="100" height="100"
+                                class="d-inline-block align-text-medium">
+                            Ana No Duerme
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/reserves.html">Reservas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/menu.html">Carta</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/about_us.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../pages/contact.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="../pages/menu.html">Carta</a></li>
-                        <li><a href="../pages/about_us.html">Nosotros</a></li>
-                        <li><a href="../pages/contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <!-- Menu para la vista mobile (Se habilita por media querie) -->
-                <div class="grid-item-header">
-                    <ul class="menu">
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="../pages/reserves.html"> Reservas</a></li>
-                        <li><a href="../pages/menu.html">Carta</a></li>
-                        <li><a href="../pages/about_us.html">Nosotros</a></li>
-                        <li><a href="../pages/contact.html">Contacto</a></li>
-                    </ul>
+                </nav>
+            </div>
+            <div class="col-6 mb-5 mt-4">
+                <!--Google map-->
+                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.671501089737!2d-58.23516898137736!3d-32.48147712935789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afdb6e6836bcbd%3A0x9589fbf24f67ac6!2sANA%20NO%20DUERME!5e0!3m2!1ses-419!2sar!4v1654468250748!5m2!1ses-419!2sar"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="grid-item-contact-container">
-                <section class=formContact>
-                    <h1 class="title_contact">¡Contactanos!</h1>
-                    <article>
-                        <form action="#" class="items-formContact">
-                            <label for="email">Nombre:
-                                <input type="text" placeholder="Ingresa tu nombre"><br>
-                            </label>
-                            <label for="email">Email:
-                                <input type="email" placeholder="aaa@gmail.com" name="email"><br>
-                            </label>
-                            <label for="email">Asunto:
-                                <input type="text" placeholder="Ingres el asunto" name="email"><br>
-                            </label>
-                            <label for="Observaciones"> Mensaje:<br>
-                                <textarea placeholder="Observaciones"></textarea>
-                            </label> <br>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Limpiar Campos">
-                        </form>
-                    </article>
-                </section>
+            <div class="col-6 mb-5 mt-4">
+                <h1 class="text-reserves">Contacto</h1>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" style="justify-content: center;">Enviar</button>
             </div>
-        </div>
-        <div class="grid-item-footer-container">
-            <div class="grid-container-footer">
-                <div class="grid-item-footer">
-                    <div class="logo">
-                        <img src="../images/isologotipo.jpg">
-                        <img src="../images/logo.png">
+            <div class="row">
+                <div class="col-6" style="margin-top: -180px; text-align: center;">
+                    <p class="contact-data">Posadas 599 - Concepcion del Uruguay, Entre Rios, Argetina</p>
+                    <p class="contact-data">+54 9 3442 684398</p>
+                </div>
+            </div>
+            <div class="col">
+                <!-- Footer -->
+                <footer class="text-center text-lg-start text-muted">
+                    <section class="">
+                        <div class="container text-center text-md-start mt-5">
+                            <div class="row mt-3">
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <p>
+                                        <img src="../images/logo.png" class="logo-footer">
+                                    </p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-6 mt-4">
+                                    <h6 class="text-uppercase fw-bold" style="text-align: center;">
+                                        ¡Seguinos!
+                                    </h6>
+                                    <p>
+                                    <ul class="redes-footer">
+                                        <li><a href="./src/pages/contact.html"><img src="../images/instagram.png"></a>
+                                            </lis>
+                                        <li><img src="../images/facebook.png"></li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Contacto
+                                    </h6>
+                                    <p> Posadas 599 - Concepcion del uruguay, Entre Rios, Argetina</p>
+                                    <p><img src="../images/whatsapp.png" height="30px"> +54 9 3442 684398</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                        © 2022 Copyright:
+                        <a class="text-reset fw-bold">Ana No Duerme</a>
                     </div>
-                </div>
-                <div class="grid-item-footer">
-                    <p> Posadas 599 - Concepcion del uruguay, Entre Rios, Argetina</p>
-                    <p><a href="https://wa.link/0ffi5f"><img src="../images/whatsapp.png"> +54 9 3442 684398</p></a>
-                </div>
-                <div class="grid-item-footer">
-                    <h2>Seguinos en nuestras redes</h2>
-                    <ul class="footer-redes">
-                        <li><a href="https://www.instagram.com/_ana.no.duerme_/"><img src="../images/instagram.png"></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/Ana-no-Duerme-Resto-Bar-111057223766735"><img
-                                    src="../images/facebook.png"></a></li>
-                    </ul>
-                </div>
-                <div class="grid-item-footer">
-                    <hr>
-                    <h3>Ana no duerme © - 2022</h3>
-                </div>
-
+                </footer>
+                <!-- Footer -->
             </div>
         </div>
-    </div>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous">
+        </script>
 </body>
-
 </html>
