@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'index';
+@import 'about_us';
+@import 'contact';
+@import 'menu';
+@import 'reserves';
+@import 'navbar';
+@import 'footer';
+@import 'animations';
+@import 'responsive';
+
+
+body {
+  background-color: $color-principal !important;
+}
+
+section {
+  color: $font-color-principal;
+}
+
+nav {
+  text-align: right;
+  padding: 1%;
+}
+
+a {
+  color: $font-color-principal;
+  text-decoration: none;
+}

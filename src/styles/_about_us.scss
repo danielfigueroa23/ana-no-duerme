@@ -1,0 +1,58 @@
+/* About Us */
+
+p {
+  &.text-about-us {
+    font-family: $font-principal;
+    font-size: 25px;
+    color: $font-color-principal;
+  }
+}
+
+h1 {
+  &.title-staff {
+    text-align: center;
+    color: $font-color-principal;
+  }
+  &.title-history {
+    font-family: $font-principal;
+    color: $font-color-principal;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+h2 {
+  &.title-barmans {
+    font-family: $font-principal;
+    color: $font-color-principal;
+    text-align: center;
+  }
+}
+
+h3 {
+  &.titles-barman {
+    font-family: $font-principal;
+    color: $font-color-principal;
+    text-align: center;
+  }
+}
+
+img {
+  &.img-staff-parnerts {
+    border-radius: 100px;
+    &:hover {
+      transform: scale(2, 2);
+      transition: all 1s;
+    }
+  }
+
+  &.img-about-us {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    &:hover {
+      transform: scale(2, 2);
+      transition: all 1s;
+    }
+  }
+}

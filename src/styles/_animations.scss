@@ -1,0 +1,21 @@
+/* Animaciones */
+
+h1 {
+  &.title_reserves {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    color: $font-color-principal;
+    text-align: center;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

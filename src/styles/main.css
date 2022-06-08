@@ -1,0 +1,408 @@
+/* Variables */
+/* Index */
+div.circulo-1 {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: #912525;
+  margin-top: -230px;
+  margin-left: -200px;
+}
+
+div.circulo-2 {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: #912525;
+  margin-top: -180px;
+  margin-left: 280px;
+}
+
+img.img-deck-home {
+  border-radius: 40px;
+}
+
+img.img-deck-home:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+img#img-merienda {
+  border-radius: 40px;
+  height: 400px;
+}
+
+img#img-merienda:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+h1.text-sections {
+  font-family: "Indie Flower", cursive;
+  margin-top: 100px;
+  color: white;
+}
+
+/* About Us */
+p.text-about-us {
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+  color: white;
+}
+
+h1.title-staff {
+  text-align: center;
+  color: white;
+}
+
+h1.title-history {
+  font-family: "Indie Flower", cursive;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2.title-barmans {
+  font-family: "Indie Flower", cursive;
+  color: white;
+  text-align: center;
+}
+
+h3.titles-barman {
+  font-family: "Indie Flower", cursive;
+  color: white;
+  text-align: center;
+}
+
+img.img-staff-parnerts {
+  border-radius: 100px;
+}
+
+img.img-staff-parnerts:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+img.img-about-us {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+}
+
+img.img-about-us:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/* Contact */
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 70%;
+  width: 100%;
+  position: absolute;
+}
+
+p.contact-data {
+  color: white;
+}
+
+label.form-label {
+  color: white;
+}
+
+/* Menu */
+img.img-mas-pedidos {
+  -webkit-filter: grayscale(100%);
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+img.img-mas-pedidos:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+div.card {
+  background-color: #912525;
+  color: white;
+}
+
+/* Reserves */
+h1.text-reserves {
+  font-family: "Indie Flower", cursive;
+  color: white;
+}
+
+label.form-check-label {
+  color: white;
+}
+
+/* NavBar */
+a.navbar-brand:hover {
+  color: red;
+}
+
+a.navbar-brand {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: xx-large;
+}
+
+li.nav-item a {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: xx-large;
+}
+
+li.nav-item a:hover {
+  color: red;
+}
+
+li.nav-item.active a:hover {
+  color: red;
+}
+
+li.nav-item a.nav-link.active {
+  color: red;
+}
+
+button.navbar-toggler {
+  background-color: white;
+}
+
+/* Footer */
+img.logo-footer {
+  margin-top: 1rem;
+}
+
+ul.redes-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+ul.reder-footer li {
+  margin: 10px;
+}
+
+ul.redes-footer img {
+  width: 80%;
+}
+
+/* Animaciones */
+h1.title_reserves {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: white;
+  text-align: center;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+/* Media Queries 
+
+Entre parentesis va la medida de quiebre en la cual hacer efecto la madiea quiere
+
+min: desde / a partir de
+max: hasta
+
+*/
+/* Mobile */
+@media screen and (max-width: 767px) {
+  img.logo-footer {
+    height: 150px;
+  }
+  img.img-deck-home {
+    height: 100px;
+    width: 180px;
+  }
+  img#img-merienda {
+    border-radius: 40px;
+    height: 200px !important;
+    width: 250px;
+  }
+  img.img-about-us {
+    height: 100px !important;
+    width: 100px !important;
+  }
+  img.img-staff-parnerts {
+    width: 50px;
+    height: 50px;
+  }
+  ul.redes-footer {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    list-style: none;
+  }
+  ul.redes-footer img {
+    width: 100%;
+    height: 60px;
+  }
+  h1.text-sections {
+    font-size: 1rem;
+    margin-top: 70px !important;
+  }
+  a.navbar-brand img {
+    height: 80;
+    margin-bottom: 10px;
+  }
+  h2.title-barmans {
+    font-size: 20px;
+  }
+  h3.titles-barman {
+    font-size: 20px;
+  }
+  div.card {
+    width: 100% !important;
+    height: 250px;
+  }
+  div.modal-body div.div.card {
+    height: 600px !important;
+  }
+  div.circulo-1 {
+    width: 220px !important;
+    height: 200px !important;
+    border-radius: 50%;
+    margin-top: -150px !important;
+    margin-left: -100px !important;
+  }
+  div.circulo-2 {
+    width: 130px !important;
+    height: 130px !important;
+    border-radius: 50%;
+    background: #912525;
+    margin-top: -100px !important;
+    margin-left: 100px !important;
+  }
+  p.text-about-us {
+    font-size: 10px !important;
+  }
+}
+
+/* Para Tablets, luego ya es desktop */
+@media (min-width: 768px) and (max-width: 1023px) {
+  img.logo-footer {
+    height: 100px;
+  }
+  img.img-deck-home {
+    height: 230px;
+    width: 350px;
+  }
+  img#img-merienda {
+    border-radius: 40px;
+    height: 300px !important;
+    width: 350px;
+  }
+  img.img-staff-parnerts {
+    width: 100px;
+    height: 100px;
+  }
+  img.img-about-us {
+    height: 200px !important;
+    width: 150px !important;
+  }
+  ul.redes-footer {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    list-style: none;
+  }
+  ul.redes-footer img {
+    width: 40px !important;
+    height: 40px;
+  }
+  h1.text-sections {
+    font-size: 2rem;
+    margin-top: 100px !important;
+  }
+  div.card {
+    width: 14rem !important;
+  }
+  div.modal-body div.card {
+    width: 100% !important;
+    height: 700px !important;
+  }
+  div.circulo-1 {
+    width: 350px !important;
+    height: 350px !important;
+    border-radius: 50%;
+    margin-top: -230px;
+    margin-left: -200px;
+  }
+  div.circulo-2 {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%;
+    background: #912525;
+    margin-top: -130px !important;
+    margin-left: 130px !important;
+  }
+  p.text-about-us {
+    font-size: 20px !important;
+  }
+}
+
+body {
+  background-color: black !important;
+}
+
+section {
+  color: white;
+}
+
+nav {
+  text-align: right;
+  padding: 1%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

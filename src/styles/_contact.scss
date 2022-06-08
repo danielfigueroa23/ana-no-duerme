@@ -1,0 +1,29 @@
+/* Contact */
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+
+  iframe {
+    left: 0;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+p {
+  &.contact-data {
+    color: $font-color-principal;
+  }
+}
+
+label {
+  &.form-label {
+    color: $font-color-principal;
+  }
+}
+

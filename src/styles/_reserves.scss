@@ -1,0 +1,15 @@
+/* Reserves */
+
+h1 {
+  &.text-reserves {
+    font-family: $font-principal;
+    color: $font-color-principal;
+  }
+}
+
+
+label {
+  &.form-check-label {
+    color: $font-color-principal;
+  }
+}

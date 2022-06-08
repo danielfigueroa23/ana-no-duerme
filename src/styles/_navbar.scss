@@ -1,0 +1,67 @@
+/* NavBar */
+
+a {
+  &.navbar-brand {
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+a {
+  &.navbar-brand {
+    color: $font-color-principal;
+    font-family: $font-principal;
+    font-size: xx-large;
+  }
+}
+
+li {
+  &.nav-item {
+    a {
+      color: $font-color-principal;
+      font-family: $font-principal;
+      font-size: xx-large;
+    }
+  }
+}
+
+li {
+  &.nav-item {
+    a {
+      &:hover {
+        color: red
+      }
+    }
+  }
+}
+
+li {
+  &.nav-item {
+    &.active {
+      a {
+        &:hover {
+          color: red
+        }
+      }
+    }
+  }
+}
+
+li {
+  &.nav-item {
+    a {
+      &.nav-link {
+        &.active {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+button {
+  &.navbar-toggler {
+    background-color: white;
+  }
+}
