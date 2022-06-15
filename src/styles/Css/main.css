@@ -54,7 +54,14 @@ h1.text-sections {
   color: white;
 }
 
-h1.title-banners {
+h1.title-principal {
+  text-align: center;
+  font-family: 'Neuton', serif, cursive;
+  font-size: 60px;
+  color: white;
+}
+
+h2.title-banners {
   text-align: center;
   font-family: 'Neuton', serif, cursive;
   font-size: 50px;
@@ -80,28 +87,14 @@ p.text-about-us {
   color: white;
 }
 
-h1.title-staff {
-  text-align: center;
+.titles, h1.title-staff, h1.title-history, h2.title-barmans, h3.titles-barman {
+  font-family: "Neuton", serif;
   color: white;
+  text-align: right;
 }
 
 h1.title-history {
-  font-family: "Neuton", serif;
-  color: white;
-  text-align: center;
   margin-top: 10px;
-}
-
-h2.title-barmans {
-  font-family: "Neuton", serif;
-  color: white;
-  text-align: center;
-}
-
-h3.titles-barman {
-  font-family: "Neuton", serif;
-  color: white;
-  text-align: center;
 }
 
 img.img-staff-parnerts {
@@ -177,11 +170,16 @@ div.card {
 /* Reserves */
 h1.text-reserves {
   font-family: "Neuton", serif;
-  color: white;
+  color: black;
 }
 
 label.form-check-label {
   color: white;
+  text-align: center;
+}
+
+div#form-reserves {
+  background-color: #912525;
 }
 
 /* NavBar */
@@ -302,6 +300,7 @@ max: hasta
   }
   img.banner {
     height: 150px;
+    width: 100%;
   }
   ul.redes-footer {
     -webkit-box-pack: center !important;
@@ -378,12 +377,16 @@ max: hasta
     width: 350px;
   }
   img.img-staff-parnerts {
-    width: 100px;
     height: 100px;
+    width: 100px;
   }
   img.img-about-us {
-    height: 200px !important;
-    width: 150px !important;
+    height: 250px;
+    width: 350px;
+  }
+  img.banner {
+    height: 200px;
+    width: 100%;
   }
   ul.redes-footer {
     -webkit-box-pack: center !important;
@@ -392,8 +395,8 @@ max: hasta
     list-style: none;
   }
   ul.redes-footer img {
-    width: 40px !important;
-    height: 40px;
+    height: 50px;
+    width: 50px;
   }
   h1.text-sections {
     font-size: 2rem;

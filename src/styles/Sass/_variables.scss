@@ -7,11 +7,9 @@ $font-principal: 'Neuton', serif;
 $font-color-principal: white;
 $color-principal: black;
 
+
+// Desafio Sass 2 : crear mapa.
 $colors: (
     principal: black,
     secondary: rgb(145, 37, 37),
 );
-
-@mixin circulo ($color) {
-    
-}

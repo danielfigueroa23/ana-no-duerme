@@ -18,6 +18,7 @@ img {
 
 div {
   &.card {
+    // Desafio Sass 2 : Utilizar un mapa.
     background-color: map-get($colors, secondary);
     color: white;
   }

@@ -1,0 +1,24 @@
+/* Reserves */
+
+h1 {
+  &.text-reserves {
+    font-family: $font-principal;
+    // Desafio Sass 2 : Utilizar un mapa.
+    color: map-get($colors, principal);
+  }
+}
+
+
+label {
+  &.form-check-label {
+    color: $font-color-principal;
+    text-align: center;
+  }
+}
+
+div {
+  &#form-reserves {
+    // Desafio Sass 2 : Utilizar un mapa.
+    background-color: map-get($colors, secondary );
+  }
+}

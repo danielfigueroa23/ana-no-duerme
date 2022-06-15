@@ -1,5 +1,12 @@
 /* Index */
 
+// Desafio Sass 2 Generar un mixin para reutilizar código.
+@mixin sizes ($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+
 div {
   &.circulo-1 {
     width: 400px;
@@ -37,8 +44,8 @@ img {
     }
   }
   &.banner {
-    height:400px;
-    width:100%;
+    // Desafio Sass 2 : Utilizar un Mixin.
+    @include sizes(100%,400px);
   }
 }
 
@@ -60,6 +67,15 @@ h1 {
     margin-top: 100px;
     color: white;
   }
+  &.title-principal {
+    text-align: center;
+    font-family: 'Neuton', serif, cursive;
+    font-size: 60px; 
+    color: white; 
+  }
+}
+
+h2 {
   &.title-banners {
     text-align: center;
     font-family: 'Neuton', serif, cursive;

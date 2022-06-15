@@ -36,7 +36,8 @@ max: hasta
       height: 50px;
     }
     &.banner {
-      height: 150px;
+      // Desafio Sass 2 : Utilizar un Mixin.
+      @include sizes(100%,150px);
     }
   }
 
@@ -151,12 +152,16 @@ div {
       width: 350px;
     }
     &.img-staff-parnerts {
-      width: 100px;
-      height: 100px;
+      // Desafio Sass 2 : Utilizar un Mixin.
+      @include sizes(100px,100px);
     }
     &.img-about-us {
-      height:200px !important;
-      width: 150px !important;
+      // Desafio Sass 2 : Utilizar un Mixin.
+      @include sizes(350px,250px);
+    }
+    &.banner {
+      // Desafio Sass 2 : Utilizar un Mixin.
+      @include sizes(100%,200px);
     }
     
   }
@@ -165,8 +170,8 @@ div {
       justify-content: center !important; 
       list-style: none;
       img {
-        width: 40px !important;
-        height: 40px;
+        // Desafio Sass 2 : Utilizar un Mixin.
+        @include sizes(50px,50px);
       }
     }
   }
