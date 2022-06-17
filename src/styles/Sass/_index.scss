@@ -46,6 +46,7 @@ img {
   &.banner {
     // Desafio Sass 2 : Utilizar un Mixin.
     @include sizes(100%,400px);
+    border-radius: 30px;
   }
 }
 
@@ -80,7 +81,7 @@ h2 {
     text-align: center;
     font-family: 'Neuton', serif, cursive;
     font-size: 50px; color: white; 
-    margin-top: -40px;
+    // margin-top: -40px;
   }
 }
 
@@ -89,7 +90,7 @@ h5 {
     color: white; 
     text-align: center; 
     font-family: 'Neuton', serif;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 
