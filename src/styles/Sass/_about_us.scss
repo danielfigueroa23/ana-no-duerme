@@ -12,7 +12,7 @@ p {
 .titles {
   font-family: $font-principal;
   color: $font-color-principal;
-  text-align: right;
+  text-align: center;
 }
 
 
@@ -20,10 +20,12 @@ h1 {
   &.title-staff {
     // Desafio Sass 2: aplicar un extend.
     @extend .titles;
+    margin-top: 10px;
   }
   &.title-history {
     // Desafio Sass 2: aplicar un extend.
     @extend .titles;
+    text-align: center;
     margin-top: 10px;
   }
 }
@@ -32,6 +34,7 @@ h2 {
   &.title-barmans {
     // Desafio Sass 2: aplicar un extend.
     @extend .titles;
+    margin-top: 10px;
   }
 }
 
@@ -53,11 +56,17 @@ img {
 
   &.img-about-us {
     width: 100%;
-    height: 40%;
+    height: 50%;
     padding: 10px;
     &:hover {
       transform: scale(2, 2);
       transition: all 1s;
     }
+  }
+}
+
+div {
+  &#about-us-container-mobile {
+    display: none;
   }
 }

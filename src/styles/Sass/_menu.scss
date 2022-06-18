@@ -22,4 +22,8 @@ div {
     background-color: map-get($colors, secondary);
     color: white;
   }
+  &#card-menu-item {
+    width: 18rem;
+    margin: 10px;
+  }
 }

@@ -18,6 +18,15 @@ div {
     margin-top: -230px;
     margin-left: -200px;
   }
+  &#navbarSupportedContent{
+    justify-content: end;
+  }
+  &#header-Presentation-Mobile {
+    display: none; 
+  }
+  &#carouselExampleCaptions-1 {
+    display: none;
+  }
 }
 
 div {
@@ -48,6 +57,15 @@ img {
     @include sizes(100%,400px);
     border-radius: 30px;
   }
+  &#tragos-carrousel {
+    border-radius: 30px;
+  }
+  &#food-grid {
+    border-radius: 30px;
+  }
+  &#food-merienda-grid {
+    border-radius: 30px;
+  }
 }
 
 img {
@@ -58,6 +76,14 @@ img {
       transform: scale(2,2);
       transition: all 1s; 
     }
+  }
+  &.img-inicio-desktop {
+    margin-top: -330px; 
+    width: 100%;
+  }
+  &.img-inicio-mobile {
+    margin-top: -230px;
+    width: 100%; 
   }
 }
 
@@ -70,9 +96,17 @@ h1 {
   }
   &.title-principal {
     text-align: center;
-    font-family: 'Neuton', serif, cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 60px; 
     color: white; 
+    margin-top: 20px;
+  }
+  &.title-principal-Mobile {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px; 
+    color: white; 
+    margin-top: 10px;
   }
 }
 
@@ -83,6 +117,11 @@ h2 {
     font-size: 50px; color: white; 
     // margin-top: -40px;
   }
+  &.title-secondary {
+    font-family: 'Neuton', serif; 
+    color: white;
+    text-align: center;
+  }
 }
 
 h5 {
@@ -90,10 +129,16 @@ h5 {
     color: white; 
     text-align: center; 
     font-family: 'Neuton', serif;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
 hr {
   color: white !important;
+}
+
+ul {
+  &.navbar-nav {
+    text-align: center;
+  }
 }

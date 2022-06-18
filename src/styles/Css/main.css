@@ -9,6 +9,20 @@ div.circulo-1 {
   margin-left: -200px;
 }
 
+div#navbarSupportedContent {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+div#header-Presentation-Mobile {
+  display: none;
+}
+
+div#carouselExampleCaptions-1 {
+  display: none;
+}
+
 div.circulo-2 {
   width: 400px;
   height: 400px;
@@ -37,6 +51,18 @@ img.banner {
   border-radius: 30px;
 }
 
+img#tragos-carrousel {
+  border-radius: 30px;
+}
+
+img#food-grid {
+  border-radius: 30px;
+}
+
+img#food-merienda-grid {
+  border-radius: 30px;
+}
+
 img#img-merienda {
   border-radius: 40px;
   height: 400px;
@@ -49,6 +75,16 @@ img#img-merienda:hover {
   transition: all 1s;
 }
 
+img.img-inicio-desktop {
+  margin-top: -330px;
+  width: 100%;
+}
+
+img.img-inicio-mobile {
+  margin-top: -230px;
+  width: 100%;
+}
+
 h1.text-sections {
   font-family: "Neuton", serif;
   margin-top: 100px;
@@ -57,9 +93,18 @@ h1.text-sections {
 
 h1.title-principal {
   text-align: center;
-  font-family: 'Neuton', serif, cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 60px;
   color: white;
+  margin-top: 20px;
+}
+
+h1.title-principal-Mobile {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  color: white;
+  margin-top: 10px;
 }
 
 h2.title-banners {
@@ -69,15 +114,25 @@ h2.title-banners {
   color: white;
 }
 
+h2.title-secondary {
+  font-family: 'Neuton', serif;
+  color: white;
+  text-align: center;
+}
+
 h5.subTitle-banners {
   color: white;
   text-align: center;
   font-family: 'Neuton', serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 hr {
   color: white !important;
+}
+
+ul.navbar-nav {
+  text-align: center;
 }
 
 /* About Us */
@@ -90,10 +145,19 @@ p.text-about-us {
 .titles, h1.title-staff, h1.title-history, h2.title-barmans, h3.titles-barman {
   font-family: "Neuton", serif;
   color: white;
-  text-align: right;
+  text-align: center;
+}
+
+h1.title-staff {
+  margin-top: 10px;
 }
 
 h1.title-history {
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2.title-barmans {
   margin-top: 10px;
 }
 
@@ -110,7 +174,7 @@ img.img-staff-parnerts:hover {
 
 img.img-about-us {
   width: 100%;
-  height: 40%;
+  height: 50%;
   padding: 10px;
 }
 
@@ -119,6 +183,10 @@ img.img-about-us:hover {
           transform: scale(2, 2);
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+div#about-us-container-mobile {
+  display: none;
 }
 
 /* Contact */
@@ -145,6 +213,28 @@ label.form-label {
   color: white;
 }
 
+div#contact-container-mobile {
+  display: none;
+}
+
+div#map-container-google-1 {
+  height: 500px;
+}
+
+div#contact-data-container {
+  margin-top: -180px;
+  text-align: center;
+}
+
+div#text-form-contact {
+  text-align: center;
+  margin-top: 15px;
+}
+
+h1.text-contact {
+  color: white;
+}
+
 /* Menu */
 img.img-mas-pedidos {
   -webkit-filter: grayscale(100%);
@@ -167,10 +257,19 @@ div.card {
   color: white;
 }
 
+div#card-menu-item {
+  width: 18rem;
+  margin: 10px;
+}
+
 /* Reserves */
 h1.text-reserves {
   font-family: "Neuton", serif;
   color: black;
+}
+
+h2.title-personal-data {
+  color: white;
 }
 
 label.form-check-label {
@@ -179,7 +278,20 @@ label.form-check-label {
 }
 
 div#form-reserves {
-  background-color: #912525;
+  border-radius: 40px;
+  border-color: #ca4422;
+  border-width: 1px;
+  border-style: solid;
+}
+
+div#form-items-reserves {
+  background-color: black;
+  text-align: center;
+}
+
+div#form-items-reserves-mobile {
+  display: none;
+  text-align: center;
 }
 
 /* NavBar */
@@ -237,6 +349,21 @@ ul.redes-footer img {
   width: 80%;
 }
 
+div#container-redes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div#Copyright-container {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: white;
+}
+
+h6#text-redes {
+  text-align: center;
+}
+
 /* Animaciones */
 h1.title_reserves {
   -webkit-animation-duration: 2s;
@@ -291,12 +418,12 @@ max: hasta
     width: 250px;
   }
   img.img-about-us {
-    height: 100px !important;
-    width: 100px !important;
+    height: 150px;
+    width: 100%;
   }
   img.img-staff-parnerts {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 80%;
   }
   img.banner {
     height: 150px;
@@ -306,15 +433,20 @@ max: hasta
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+    margin: 10px 40px 10px 10px;
     list-style: none;
   }
   ul.redes-footer img {
     width: 100%;
     height: 60px;
+    padding: 4px;
   }
   h1.text-sections {
     font-size: 1rem;
     margin-top: 70px !important;
+  }
+  h1.text-contact {
+    text-align: center;
   }
   a.navbar-brand {
     font-size: 25px;
@@ -336,6 +468,38 @@ max: hasta
   div.modal-body div.div.card {
     height: 600px !important;
   }
+  div#about-us-container-desktop {
+    display: none;
+  }
+  div#about-us-container-mobile {
+    display: block;
+  }
+  div#BannerContainer {
+    border-radius: 40px;
+    border-color: #ca4422;
+    border-width: 1px;
+    border-style: solid;
+  }
+  div#header-Presentation-Desktop {
+    display: none;
+  }
+  div#header-Presentation-Mobile {
+    display: block !important;
+  }
+  div#contact-container-desktop {
+    display: none;
+  }
+  div#contact-container-mobile {
+    display: block;
+  }
+  div#map-container-google-1 {
+    height: 400px;
+    margin-top: 20px;
+  }
+  div#contact-data-container {
+    margin-top: -60px;
+    text-align: center;
+  }
   div.circulo-1 {
     width: 220px !important;
     height: 200px !important;
@@ -352,13 +516,28 @@ max: hasta
     margin-left: 100px !important;
   }
   p.text-about-us {
-    font-size: 10px !important;
+    font-size: 15px !important;
   }
   div#tragos {
     display: none;
   }
   div#carouselExampleCaptions-1 {
     display: block !important;
+  }
+  div#form-items-reserves {
+    display: none;
+  }
+  div#form-items-reserves-mobile {
+    display: block !important;
+  }
+  div#img-reserves-desktop {
+    display: none;
+  }
+  div#form-reserves {
+    border-style: none;
+  }
+  img.gif-reserves-desktop {
+    display: none;
   }
 }
 
@@ -377,26 +556,36 @@ max: hasta
     width: 350px;
   }
   img.img-staff-parnerts {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
   }
   img.img-about-us {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
   }
   img.banner {
     height: 200px;
     width: 100%;
   }
+  img.img-inicio-desktop {
+    margin-top: -230px;
+    width: 100%;
+  }
+  img.gif-reserves-desktop {
+    width: 120%;
+    height: 100%;
+  }
   ul.redes-footer {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+    margin: 10px 50px 30px 10px;
     list-style: none;
   }
   ul.redes-footer img {
     height: 50px;
     width: 50px;
+    margin: 10px 10px 5px 10px;
   }
   h1.text-sections {
     font-size: 2rem;
@@ -423,6 +612,24 @@ max: hasta
     background: #912525;
     margin-top: -130px !important;
     margin-left: 130px !important;
+  }
+  div#BannerContainer {
+    border-radius: 40px;
+    border-color: #ca4422;
+    border-width: 1px;
+    border-style: solid;
+  }
+  div#header-Presentation-Desktop {
+    display: block;
+  }
+  div#header-Presentation-Mobile {
+    display: none !important;
+  }
+  div#contact-container-desktop {
+    display: none;
+  }
+  div#contact-container-mobile {
+    display: block;
   }
   p.text-about-us {
     font-size: 20px !important;

@@ -8,6 +8,13 @@ h1 {
   }
 }
 
+h2 {
+  &.title-personal-data {
+    color: white;
+  }
+}
+
+
 
 label {
   &.form-check-label {
@@ -19,6 +26,24 @@ label {
 div {
   &#form-reserves {
     // Desafio Sass 2 : Utilizar un mapa.
-    background-color: map-get($colors, secondary );
+    // background-color: map-get($colors, secondary );
+    border-radius: 40px;
+    border-color: rgb(202, 68, 34); 
+    border-width: 1px; 
+    border-style: solid;
+  }
+  &#form-items-reserves {
+    background-color: black;
+    text-align: center;
+  }
+  &#form-items-reserves-mobile {
+    display: none;
+    text-align: center;
   }
 }
+
+// iframe {
+//   &.gif-reserves-desktop {
+//     display: none;
+//   }
+// }

@@ -27,3 +27,26 @@ label {
   }
 }
 
+div {
+  &#contact-container-mobile {
+    display: none;
+  }
+  &#map-container-google-1 {
+    height: 500px;
+  }
+  &#contact-data-container {
+    margin-top: -180px;
+    text-align: center;
+  }
+  &#text-form-contact {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+h1 {
+  &.text-contact {
+    color: white;
+  }
+}
+

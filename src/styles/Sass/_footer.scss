@@ -29,3 +29,19 @@ ul {
     }
   }
 }
+
+div {
+  &#container-redes {
+    justify-content: center;
+  }
+  &#Copyright-container {
+    background-color: rgba(0, 0, 0, 0.05); 
+    color: white;
+  }
+}
+
+h6 {
+  &#text-redes {
+    text-align: center;
+  }
+}

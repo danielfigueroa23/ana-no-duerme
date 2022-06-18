@@ -28,12 +28,11 @@ max: hasta
       width: 250px;
     }
     &.img-about-us {
-      height:100px !important;
-      width: 100px !important;
+      @include sizes(100%,150px);
     }
     &.img-staff-parnerts {
-      width: 50px;
-      height: 50px;
+      width: 100%;
+      height: 80%;
     }
     &.banner {
       // Desafio Sass 2 : Utilizar un Mixin.
@@ -43,11 +42,13 @@ max: hasta
 
   ul {
     &.redes-footer {
-      justify-content: center !important; 
+      justify-content: center !important;
+      margin: 10px 40px 10px 10px; 
       list-style: none;
       img {
         width:100%;
         height: 60px;
+        padding: 4px;
       }
     }
   }
@@ -56,6 +57,9 @@ max: hasta
     &.text-sections {
       font-size: 1rem;
       margin-top: 70px !important;
+    }
+    &.text-contact {
+      text-align: center;
     }
   }
 
@@ -94,6 +98,38 @@ max: hasta
         }
       }
     }
+    &#about-us-container-desktop  {
+      display: none;
+    }
+    &#about-us-container-mobile  {
+      display: block;
+    }
+    &#BannerContainer {
+      border-radius: 40px; 
+      border-color: rgb(202, 68, 34); 
+      border-width: 1px; 
+      border-style: solid;
+    }
+    &#header-Presentation-Desktop{
+      display: none;
+    }
+    &#header-Presentation-Mobile {
+      display: block !important;
+    }
+    &#contact-container-desktop {
+      display: none;
+    }
+    &#contact-container-mobile {
+      display: block;
+    }
+    &#map-container-google-1 {
+      height: 400px; 
+      margin-top: 20px;
+    }
+    &#contact-data-container {
+      margin-top: -60px; 
+      text-align: center;
+    }
     &.circulo-1 {
       width: 220px !important;
       height: 200px !important;
@@ -115,18 +151,36 @@ max: hasta
     }
   }
 
-p {
-  &.text-about-us {
-    font-size: 10px !important;
+  p {
+    &.text-about-us {
+      font-size: 15px !important;
+    }
   }
+
+  div {
+    &#tragos {
+      display: none;
+    }
+    &#carouselExampleCaptions-1 {
+      display: block !important;
+    }
+    &#form-items-reserves {
+      display: none;
+    }
+    &#form-items-reserves-mobile {
+      display: block !important;
+    }
+    &#img-reserves-desktop {
+      display: none;
+    }
+    &#form-reserves {
+      border-style: none;
+    }
 }
 
-div {
-  &#tragos {
+img {
+  &.gif-reserves-desktop {
     display: none;
-  }
-  &#carouselExampleCaptions-1 {
-    display: block !important;
   }
 }
 
@@ -153,25 +207,34 @@ div {
     }
     &.img-staff-parnerts {
       // Desafio Sass 2 : Utilizar un Mixin.
-      @include sizes(100px,100px);
+      @include sizes(300px,300px);
     }
     &.img-about-us {
       // Desafio Sass 2 : Utilizar un Mixin.
-      @include sizes(350px,250px);
+      @include sizes(300px,200px);
     }
     &.banner {
       // Desafio Sass 2 : Utilizar un Mixin.
       @include sizes(100%,200px);
     }
-    
+    &.img-inicio-desktop {
+      margin-top: -230px; 
+      width: 100%;
+    }
+    &.gif-reserves-desktop {
+      width: 120%;
+      height: 100%;
+    }
   }
   ul {
     &.redes-footer {
       justify-content: center !important; 
+      margin: 10px 50px 30px 10px; 
       list-style: none;
       img {
         // Desafio Sass 2 : Utilizar un Mixin.
         @include sizes(50px,50px);
+        margin: 10px 10px 5px 10px; 
       }
     }
   }
@@ -213,7 +276,24 @@ div {
       margin-top: -130px !important;
       margin-left: 130px !important;
     }
-
+    &#BannerContainer {
+      border-radius: 40px; 
+      border-color: rgb(202, 68, 34); 
+      border-width: 1px; 
+      border-style: solid;
+    }
+    &#header-Presentation-Desktop{
+      display: block;
+    }
+    &#header-Presentation-Mobile {
+      display: none !important;
+    }
+    &#contact-container-desktop {
+      display: none;
+    }
+    &#contact-container-mobile {
+      display: block;
+    }
   }
   p {
     &.text-about-us {
