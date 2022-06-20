@@ -17,11 +17,6 @@ p {
 
 
 h1 {
-  &.title-staff {
-    // Desafio Sass 2: aplicar un extend.
-    @extend .titles;
-    margin-top: 10px;
-  }
   &.title-history {
     // Desafio Sass 2: aplicar un extend.
     @extend .titles;
@@ -32,6 +27,11 @@ h1 {
 
 h2 {
   &.title-barmans {
+    // Desafio Sass 2: aplicar un extend.
+    @extend .titles;
+    margin-top: 10px;
+  }
+  &.title-staff {
     // Desafio Sass 2: aplicar un extend.
     @extend .titles;
     margin-top: 10px;

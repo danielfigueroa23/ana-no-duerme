@@ -119,6 +119,21 @@ max: hasta
     &#contact-container-desktop {
       display: none;
     }
+    &#carouselExampleControls {
+      display: none;
+    }
+    &#maspedidos-mobile {
+      display: flex;
+    }
+    &#carta-mobile {
+      display: block;
+    }
+    &#carta-desktop {
+      display: none;
+    }
+    &#content-cards-mobile {
+      display: block;
+    }
     &#contact-container-mobile {
       display: block;
     }
@@ -293,6 +308,16 @@ img {
     }
     &#contact-container-mobile {
       display: block;
+    }
+    &#carouselExampleControls {
+      display: none;
+    }
+    &#maspedidos-mobile {
+      display: flex;
+    }
+    &#contact-data-container {
+      margin-top: -90px; 
+      text-align: center;
     }
   }
   p {

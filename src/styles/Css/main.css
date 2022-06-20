@@ -142,14 +142,10 @@ p.text-about-us {
   color: white;
 }
 
-.titles, h1.title-staff, h1.title-history, h2.title-barmans, h3.titles-barman {
+.titles, h1.title-history, h2.title-barmans, h2.title-staff, h3.titles-barman {
   font-family: "Neuton", serif;
   color: white;
   text-align: center;
-}
-
-h1.title-staff {
-  margin-top: 10px;
 }
 
 h1.title-history {
@@ -158,6 +154,10 @@ h1.title-history {
 }
 
 h2.title-barmans {
+  margin-top: 10px;
+}
+
+h2.title-staff {
   margin-top: 10px;
 }
 
@@ -260,6 +260,74 @@ div.card {
 div#card-menu-item {
   width: 18rem;
   margin: 10px;
+}
+
+div#title-carrousel-cocktails {
+  margin-left: 130px;
+  color: white;
+}
+
+div#ilustration {
+  margin-right: 130px;
+  height: 400px;
+  width: 400px;
+}
+
+div#options {
+  text-align: center;
+}
+
+div#content-cards-mobile {
+  display: none;
+}
+
+div#maspedidos-mobile {
+  display: none;
+}
+
+div#content-cards {
+  text-align: center;
+}
+
+div#carta-mobile {
+  display: none;
+}
+
+div#queTomar-button {
+  text-align: center;
+}
+
+div#card-menu-item-mobile {
+  width: 18rem;
+  margin: 10px;
+  height: 500px;
+}
+
+h1.title-menu {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+h2.title-carta {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+h2.subtitle-carta {
+  color: white;
+}
+
+h3.subtitle-carta {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+button#search-button {
+  margin-left: 5px;
 }
 
 /* Reserves */
@@ -489,6 +557,23 @@ max: hasta
   div#contact-container-desktop {
     display: none;
   }
+  div#carouselExampleControls {
+    display: none;
+  }
+  div#maspedidos-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div#carta-mobile {
+    display: block;
+  }
+  div#carta-desktop {
+    display: none;
+  }
+  div#content-cards-mobile {
+    display: block;
+  }
   div#contact-container-mobile {
     display: block;
   }
@@ -630,6 +715,18 @@ max: hasta
   }
   div#contact-container-mobile {
     display: block;
+  }
+  div#carouselExampleControls {
+    display: none;
+  }
+  div#maspedidos-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div#contact-data-container {
+    margin-top: -90px;
+    text-align: center;
   }
   p.text-about-us {
     font-size: 20px !important;

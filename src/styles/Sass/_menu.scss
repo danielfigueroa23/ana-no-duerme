@@ -26,4 +26,73 @@ div {
     width: 18rem;
     margin: 10px;
   }
+  &#title-carrousel-cocktails {
+    margin-left: 130px; 
+    color: white;
+  }
+  &#ilustration {
+    margin-right: 130px; 
+    height: 400px;
+    width: 400px;
+  }
+  &#options {
+    text-align: center;
+  }
+  &#content-cards-mobile {
+    display: none;
+  }
+  &#maspedidos-mobile {
+    display: none;
+  }
+  &#content-cards {
+    text-align: center;
+  }
+  // &#carouselExampleControls {
+  //   display: none;
+  // }
+  &#carta-mobile {
+    display: none;
+  }
+  &#queTomar-button {
+    text-align: center;
+  }
+  &#card-menu-item-mobile {
+    width: 18rem;
+    margin: 10px;
+    height: 500px;
+  }
+}
+
+h1 {
+  &.title-menu {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+}
+
+h2 {
+  &.title-carta {
+    text-align: center; 
+    color: white; 
+    margin-top: 30px;
+  }
+  &.subtitle-carta {
+    color: white; 
+  }
+}
+
+h3 {
+  &.subtitle-carta {
+    text-align: center; 
+    color: white; 
+    margin-top: 10px; 
+    margin-bottom: 40px;
+  }
+}
+
+button {
+  &#search-button {
+    margin-left: 5px;
+  }
 }
