@@ -1,25 +1,61 @@
 /* Index */
 
-// Desafio Sass 2 Generar un mixin para reutilizar código.
 @mixin sizes ($width, $height) {
   height: $height;
   width: $width;
 }
 
+@mixin border ($val) {
+  border-radius: $val;
+}
+
+.titles-principal {
+  font-family: $font-sencondary;
+  color: $font-color-principal;
+  text-align: center;
+  font-size: 60px;
+}
+
+
+h1 {
+  &.title-principal {
+    @extend .titles-principal;
+    position: absolute;
+    top: 2%;
+    left: 35%;
+    margin-top: 20px;
+  }
+  &.title-principal-Mobile {
+    @extend .titles-principal;
+    margin-top: 10px;
+  }
+}
+
+h2 {
+  &.title-banners {
+    @extend .titles;
+    font-size: 50px; 
+    margin-top: 10px;
+  }
+  &.title-secondary {
+    @extend .titles;
+  }
+}
+
+h5 {
+  &.subTitle-banners {
+    @extend .titles;
+    margin-bottom: 10px;
+  }
+}
+
 
 div {
-  &.circulo-1 {
-    width: 400px;
-    height: 400px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: rgb(145, 37, 37);
-    margin-top: -230px;
-    margin-left: -200px;
-  }
   &#navbarSupportedContent{
     justify-content: end;
+  }
+  &#header-Presentation-Desktop{
+    position: relative;
   }
   &#header-Presentation-Mobile {
     display: none; 
@@ -29,112 +65,31 @@ div {
   }
 }
 
-div {
-  &.circulo-2 {
-    width: 400px;
-    height: 400px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: rgb(145, 37, 37);
-    margin-top: -180px;
-    margin-left: 280px;
-  }
-}
-
 img {
-  &.img-deck-home {
-    border-radius: 40px;
-    width: 100%;
-    height: 50%;
-    &:hover {
-      transform: scale(2,2);
-      transition: all 1s;
-    }
-  }
   &.banner {
-    // Desafio Sass 2 : Utilizar un Mixin.
     @include sizes(100%,400px);
     border-radius: 30px;
+    box-shadow: 5px 8px 12px red;
   }
   &#tragos-carrousel {
-    border-radius: 30px;
+    @include border($px-border-radius);
   }
   &#food-grid {
-    border-radius: 30px;
+    @include border($px-border-radius);
   }
   &#food-merienda-grid {
-    border-radius: 30px;
-  }
-}
-
-img {
-  &#img-merienda {
-    border-radius: 40px;
-    height: 400px;
-    &:hover{
-      transform: scale(2,2);
-      transition: all 1s; 
-    }
+    @include border($px-border-radius);
   }
   &.img-inicio-desktop {
-    margin-top: -330px; 
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px red;
     width: 100%;
   }
   &.img-inicio-mobile {
     margin-top: -230px;
     width: 100%; 
   }
-}
-
-
-h1 {
-  &.text-sections {
-    font-family: $font-principal;
-    margin-top: 100px;
-    color: white;
-  }
-  &.title-principal {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 60px; 
-    color: white; 
-    margin-top: 20px;
-  }
-  &.title-principal-Mobile {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 60px; 
-    color: white; 
-    margin-top: 10px;
-  }
-}
-
-h2 {
-  &.title-banners {
-    text-align: center;
-    font-family: 'Neuton', serif, cursive;
-    font-size: 50px; color: white; 
-    // margin-top: -40px;
-  }
-  &.title-secondary {
-    font-family: 'Neuton', serif; 
-    color: white;
-    text-align: center;
-  }
-}
-
-h5 {
-  &.subTitle-banners {
-    color: white; 
-    text-align: center; 
-    font-family: 'Neuton', serif;
-    margin-bottom: 10px;
-  }
-}
-
-hr {
-  color: white !important;
 }
 
 ul {

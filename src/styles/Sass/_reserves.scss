@@ -1,43 +1,31 @@
 /* Reserves */
 
-h1 {
-  &.text-reserves {
-    font-family: $font-principal;
-    // Desafio Sass 2 : Utilizar un mapa.
-    color: map-get($colors, principal);
-  }
-}
 
 h2 {
   &.title-personal-data {
-    color: white;
-  }
-}
-
-
-
-label {
-  &.form-check-label {
     color: $font-color-principal;
-    text-align: center;
   }
 }
 
 div {
   &#form-reserves {
-    // Desafio Sass 2 : Utilizar un mapa.
-    // background-color: map-get($colors, secondary );
     border-radius: 40px;
     border-color: rgb(202, 68, 34); 
     border-width: 1px; 
     border-style: solid;
   }
   &#form-items-reserves {
-    background-color: black;
     text-align: center;
   }
   &#form-items-reserves-mobile {
     display: none;
     text-align: center;
+  }
+}
+
+button {
+  &#btn-reservar {
+    background-color: rgb(202, 68, 34);
+    color: $font-color-principal;
   }
 }

@@ -1,5 +1,11 @@
 /* About Us */
 
+.titles {
+  font-family: $font-principal;
+  color: $font-color-principal;
+  text-align: center;
+}
+
 p {
   &.text-about-us {
     font-family: $font-principal;
@@ -8,17 +14,8 @@ p {
   }
 }
 
-// Desafio Sass 2 :crear una clase para luego reutilizarla aplicando extend.
-.titles {
-  font-family: $font-principal;
-  color: $font-color-principal;
-  text-align: center;
-}
-
-
 h1 {
   &.title-history {
-    // Desafio Sass 2: aplicar un extend.
     @extend .titles;
     text-align: center;
     margin-top: 10px;
@@ -27,12 +24,10 @@ h1 {
 
 h2 {
   &.title-barmans {
-    // Desafio Sass 2: aplicar un extend.
     @extend .titles;
     margin-top: 10px;
   }
   &.title-staff {
-    // Desafio Sass 2: aplicar un extend.
     @extend .titles;
     margin-top: 10px;
   }
@@ -40,7 +35,6 @@ h2 {
 
 h3 {
   &.titles-barman {
-    // Desafio Sass 2: aplicar un extend.
     @extend .titles;
   }
 }
