@@ -1,21 +1,23 @@
 /* NavBar */
 
 li {
-    &.nav-item {
-      a {
-        color: $font-color-principal;
-        font-family: $font-principal;
-        font-size: xx-large;
-        &.nav-link {
-          &.active {
-            color: red;
-          }
-          &:hover {
-            color: red
-          }
+  &.nav-item {
+    a {
+      color: $font-color-principal;
+      font-family: $font-principal;
+      font-size: xx-large;
+
+      &.nav-link {
+        &.active {
+          color: red;
         }
+
+        &:hover {
+          color: red
         }
-}
+      }
+    }
+  }
 }
 
 button {
