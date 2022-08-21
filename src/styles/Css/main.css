@@ -391,12 +391,7 @@ h1.title_reserves {
 /* Responsive */
 /* Media Queries 
 
-Entre parentesis va la medida de quiebre en la cual hacer efecto la madiea quiere
 
-min: desde / a partir de
-max: hasta
-
-*/
 /* Mobile */
 @media screen and (max-width: 767px) {
   img.logo-footer {
